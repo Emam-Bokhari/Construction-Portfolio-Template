@@ -640,6 +640,10 @@ video {
   height: 100px;
 }
 
+.h-\[120px\] {
+  height: 120px;
+}
+
 .h-\[350px\] {
   height: 350px;
 }
@@ -656,32 +660,12 @@ video {
   height: 450px;
 }
 
-.h-\[550px\] {
-  height: 550px;
-}
-
 .h-\[800px\] {
   height: 800px;
 }
 
 .h-\[80px\] {
   height: 80px;
-}
-
-.h-\[50px\] {
-  height: 50px;
-}
-
-.h-\[650px\] {
-  height: 650px;
-}
-
-.h-\[600px\] {
-  height: 600px;
-}
-
-.h-\[0px\] {
-  height: 0px;
 }
 
 .w-12 {
@@ -694,6 +678,10 @@ video {
 
 .w-80 {
   width: 20rem;
+}
+
+.w-\[120px\] {
+  width: 120px;
 }
 
 .w-\[208px\] {
@@ -760,6 +748,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .items-start {
@@ -834,6 +826,12 @@ video {
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -850,12 +848,12 @@ video {
   border-top-left-radius: 50%;
 }
 
-.border-\[1px\] {
-  border-width: 1px;
-}
-
 .border-2 {
   border-width: 2px;
+}
+
+.border-\[1px\] {
+  border-width: 1px;
 }
 
 .border-\[\#4D5765\] {
@@ -873,9 +871,9 @@ video {
   border-color: rgb(246 138 10 / var(--tw-border-opacity));
 }
 
-.border-black {
+.border-red-500 {
   --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-\[\#0E121D\] {
@@ -898,6 +896,11 @@ video {
   background-color: rgb(246 246 246 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F8F8F8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#FFEBDE\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 235 222 / var(--tw-bg-opacity));
@@ -908,11 +911,6 @@ video {
   background-color: rgb(228 226 226 / var(--tw-bg-opacity));
 }
 
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
 .bg-transparent {
   background-color: transparent;
 }
@@ -920,11 +918,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/assets\/background-effects\/bg-effect-how-it-works\.png\'\)\] {
@@ -1172,6 +1165,21 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.ring-2 {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.ring-\[\#F68A0A\] {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(246 138 10 / var(--tw-ring-opacity));
+}
+
+.ring-offset-2 {
+  --tw-ring-offset-width: 2px;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1409,16 +1417,6 @@ video {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }
 
