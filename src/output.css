@@ -854,6 +854,10 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-\[\#4D5765\] {
   --tw-border-opacity: 1;
   border-color: rgb(77 87 101 / var(--tw-border-opacity));
@@ -867,6 +871,11 @@ video {
 .border-\[\#F68A0A\] {
   --tw-border-opacity: 1;
   border-color: rgb(246 138 10 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-\[\#0E121D\] {
@@ -911,6 +920,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/assets\/background-effects\/bg-effect-how-it-works\.png\'\)\] {
@@ -1395,6 +1409,16 @@ video {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
