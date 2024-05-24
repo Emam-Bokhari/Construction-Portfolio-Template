@@ -9,3 +9,5 @@
  font-[archivo],
  text-[#F68A0A] gold
 */
+
+// 29 hours somai lagse ai landig page ta banaite average a 5 hours somai dile o 6 din somai lagse ai landig page ta banaite
