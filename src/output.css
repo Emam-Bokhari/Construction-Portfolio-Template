@@ -726,6 +726,10 @@ video {
   height: 150px;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
 .min-h-\[100px\] {
   min-height: 100px;
 }
@@ -965,6 +969,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .rounded-bl-\[50\%\] {
   border-bottom-left-radius: 50%;
 }
@@ -1063,6 +1071,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
 }
 
 .bg-\[url\(\'\.\/assets\/background-effects\/bg-effect-how-it-works\.png\'\)\] {
