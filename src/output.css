@@ -598,14 +598,6 @@ video {
   z-index: 10;
 }
 
-.col-span-4 {
-  grid-column: span 4 / span 4;
-}
-
-.col-span-8 {
-  grid-column: span 8 / span 8;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -698,6 +690,10 @@ video {
   height: 185px;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
 .h-\[350px\] {
   height: 350px;
 }
@@ -722,16 +718,12 @@ video {
   height: 80px;
 }
 
-.h-\[150px\] {
-  height: 150px;
-}
-
-.h-\[300px\] {
-  height: 300px;
-}
-
 .min-h-\[100px\] {
   min-height: 100px;
+}
+
+.min-h-\[300px\] {
+  min-height: 300px;
 }
 
 .w-12 {
@@ -750,12 +742,12 @@ video {
   width: 20rem;
 }
 
-.w-\[100px\] {
-  width: 100px;
-}
-
 .w-\[120px\] {
   width: 120px;
+}
+
+.w-\[150px\] {
+  width: 150px;
 }
 
 .w-\[180px\] {
@@ -788,38 +780,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[150px\] {
-  width: 150px;
-}
-
-.w-2\/5 {
-  width: 40%;
-}
-
-.w-2\/4 {
-  width: 50%;
-}
-
-.w-3\/5 {
-  width: 60%;
-}
-
-.w-1\/4 {
-  width: 25%;
-}
-
-.w-3\/4 {
-  width: 75%;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
 }
 
 .max-w-\[425px\] {
@@ -859,10 +819,6 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -965,12 +921,12 @@ video {
   border-radius: 0.375rem;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .rounded-sm {
   border-radius: 0.125rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .rounded-bl-\[50\%\] {
@@ -1071,10 +1027,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\] {
-  background-color: ;
 }
 
 .bg-\[url\(\'\.\/assets\/background-effects\/bg-effect-how-it-works\.png\'\)\] {
@@ -1202,6 +1154,10 @@ video {
 
 .font-\[titillium\] {
   font-family: titillium;
+}
+
+.font-\[\] {
+  font-family: ;
 }
 
 .text-2xl {
@@ -1827,20 +1783,20 @@ video {
     height: 500px;
   }
 
-  .xl\:w-96 {
-    width: 24rem;
-  }
-
-  .xl\:w-\[500px\] {
-    width: 500px;
-  }
-
   .xl\:w-1\/3 {
     width: 33.333333%;
   }
 
   .xl\:w-2\/3 {
     width: 66.666667%;
+  }
+
+  .xl\:w-96 {
+    width: 24rem;
+  }
+
+  .xl\:w-\[500px\] {
+    width: 500px;
   }
 
   .xl\:max-w-\[1218px\] {
