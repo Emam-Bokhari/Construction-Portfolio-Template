@@ -718,6 +718,22 @@ video {
   height: 80px;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[4\] {
+  height: 4;
+}
+
+.h-\[35px\] {
+  height: 35px;
+}
+
 .min-h-\[100px\] {
   min-height: 100px;
 }
@@ -1574,6 +1590,10 @@ video {
     display: flex;
   }
 
+  .md\:h-\[400px\] {
+    height: 400px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1783,6 +1803,10 @@ video {
     height: 500px;
   }
 
+  .xl\:h-\[300px\] {
+    height: 300px;
+  }
+
   .xl\:w-1\/3 {
     width: 33.333333%;
   }
@@ -1809,6 +1833,10 @@ video {
 
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
   }
 
   .xl\:gap-10 {
