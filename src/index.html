@@ -82,19 +82,19 @@
         <!-- Ends top navbar -->
 
         <!-- Start Navbar -->
-        <div class="bg-[#FFEBDE] w-full h-[100px]">
+        <div class="bg-[#FFEBDE] w-full ">
             <div class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-8 flex justify-between items-center ">
 
                 <div class="flex items-center gap-10">
                     <!-- Start logo -->
                     <div>
-                        <img class="w-[208px] h-[100px]" src="./assets/logo/logo.png" alt="">
+                        <img class="w-[120px] lg:w-[208px] h-[70px] lg:h-[100px]" src="./assets/logo/logo.png" alt="">
                     </div>
                     <!-- Ends logo -->
 
                     <!-- navlink -->
-                    <div>
-                        <ul class="flex items-center gap-10">
+                    <div  class="z-10 nav-links transition-all duration-700  lg:static absolute bg-white lg:bg-transparent lg:min-h-fit min-h-[50vh] left-0 top-[-100%] lg:w-auto  w-full flex items-center px-5">
+                        <ul class="flex flex-col lg:flex-row lg:items-center gap-10">
                             <li
                                 class="text-sm font-[titillium] text-[#4C4D4E] hover:text-[#F68A0A] transform transition-all duration-200 font-[600]">
                                 <a href="./index.html">HOME</a>
@@ -121,12 +121,13 @@
                 </div>
 
                 <!-- Start get a quote button -->
-                <div>
+                <div class="flex items-center gap-3" >
                     <button
-                        class="bg-[#F68A0A] hover:bg-[#ee8404] transform transition-all duration-300 text-white text-sm font-[archivo] font-[500] px-7 py-4 flex items-center gap-1">
+                        class="bg-[#F68A0A] hover:bg-[#ee8404] transform transition-all duration-300 text-white text-sm font-[archivo] font-[500] px-3 sm:px-7 py-2 sm:py-4 flex items-center gap-1">
                         GET A QUOTE
                         <i class="fa-solid fa-arrow-right-to-bracket hidden md:block"></i>
                     </button>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer lg:hidden"></ion-icon>
                 </div>
                 <!-- Ends get a quote button -->
                 <!-- #F68A0A -->
@@ -197,7 +198,7 @@
     <!-- Start main -->
     <main>
 
-        
+
         <!-- Start aboutus -->
         <div class=" bg-white my-20">
             <div class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-8  ">
@@ -669,6 +670,7 @@
 
                     <!-- image -->
                     <div class=" flex justify-between gap-10">
+
                         <!-- image 01 -->
                         <div>
                             <img class="w-[500px] h-[400px] object-cover"
@@ -686,6 +688,7 @@
                             <img class="w-[500px] h-[400px] object-cover"
                                 src="./assets/latest-projects-image/projects-img-03.jpg" alt="">
                         </div>
+
 
 
                     </div>
@@ -1174,7 +1177,7 @@
                     Real Happy Customers, Real Stories</h3>
 
                 <!-- start cards -->
-                <div class="flex  gap-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10">
 
                     <!-- card 01 -->
                     <div class="w-full  space-y-2 p-4 bg-white shadow-sm">
@@ -1395,27 +1398,28 @@
                 </div>
 
                 <!-- blogs  -->
-                <div class=" flex gap-5 items-center">
+                <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 items-center">
 
                     <!-- blog 01 -->
-                    <div class="p-4 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-500 " >
+                    <div
+                        class="p-4 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-500 ">
                         <a href="#">
                             <div class=" space-y-3 md:space-y-4">
 
                                 <div class="relative ">
-                                    <img class="rounded-lg w-full  h-[185px]" src="./assets/aboutUs-image/aboutus-profile.jpg"
-                                        alt="">
-        
+                                    <img class="rounded-lg w-full  h-[185px]"
+                                        src="./assets/aboutUs-image/aboutus-profile.jpg" alt="">
+
                                     <h2
                                         class="bg-[#F68A0A] px-2 py-1 inline absolute w-[180px] transform -translate-x-2/4 left-2/4 top-[95%]   text-white text-sm font-[archivo] font-[500] text-center">
                                         Building Construction
                                     </h2>
                                 </div>
-        
+
                                 <p class="font-[titillium] text-[20px] font-[600]  text-[#0E121D] pt-3 text-center ">
                                     We offer comprehensive construction solutions, ensuring quality
                                 </p>
-        
+
                                 <div class="flex gap-10 items-center justify-center">
                                     <p class="text-base font-[archivo] text-[#7d8794] font-normal">By Admin</p>
                                     <div class="flex gap-2 items-center">
@@ -1423,30 +1427,31 @@
                                         <p class="text-base font-[archivo] text-[#7d8794] font-normal">27 May 2024</p>
                                     </div>
                                 </div>
-        
+
                             </div>
                         </a>
                     </div>
 
                     <!-- blog 02 -->
-                    <div class="p-4 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-500 ">
+                    <div
+                        class="p-4 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-500 ">
                         <a href="#">
                             <div class=" space-y-3 md:space-y-4">
 
                                 <div class="relative">
-                                    <img class="rounded-lg w-full h-[185px]" src="./assets/aboutUs-image/aboutus-profile.jpg"
-                                        alt="">
-        
+                                    <img class="rounded-lg w-full h-[185px]"
+                                        src="./assets/aboutUs-image/aboutus-profile.jpg" alt="">
+
                                     <h2
                                         class="bg-[#F68A0A] px-2 py-1 inline absolute  w-[180px] transform -translate-x-2/4 left-2/4 top-[95%]   text-white text-sm font-[archivo] font-[500] text-center ">
                                         Material Supply
                                     </h2>
                                 </div>
-        
+
                                 <p class="font-[titillium] text-[20px] font-[600]   text-[#0E121D] pt-3 text-center">
                                     We offer comprehensive construction solutions, ensuring quality
                                 </p>
-        
+
                                 <div class="flex gap-10 items-center justify-center">
                                     <p class="text-base font-[archivo] text-[#7d8794] font-normal">By Admin</p>
                                     <div class="flex gap-2 items-center">
@@ -1454,62 +1459,64 @@
                                         <p class="text-base font-[archivo] text-[#7d8794] font-normal">27 May 2024</p>
                                     </div>
                                 </div>
-        
+
                             </div>
                         </a>
                     </div>
 
                     <!-- blog 03 -->
-                    <div class="p-4 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-500 ">
-                    <a href="#">
-                        <div class=" space-y-3 md:space-y-4">
+                    <div
+                        class="p-4 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-500 ">
+                        <a href="#">
+                            <div class=" space-y-3 md:space-y-4">
 
-                            <div class="relative">
-                                <img class="rounded-lg w-full h-[185px]" src="./assets/aboutUs-image/aboutus-profile.jpg"
-                                    alt="">
-    
-                                <h2
-                                    class="bg-[#F68A0A] px-2 py-1 inline absolute  w-[180px] transform -translate-x-2/4 left-2/4 top-[95%]   text-white text-sm font-[archivo] font-[500] text-center ">
-                                    Architecture Design
-                                </h2>
-                            </div>
-    
-                            <p class="font-[titillium] text-[20px] font-[600]   text-[#0E121D] pt-3 text-center">
-                                We offer comprehensive construction solutions, ensuring quality
-                            </p>
-    
-                            <div class="flex gap-10 items-center justify-center">
-                                <p class="text-base font-[archivo] text-[#7d8794] font-normal">By Admin</p>
-                                <div class="flex gap-2 items-center">
-                                    <i class="fa-regular fa-calendar text-[#7d8794] text-base"></i>
-                                    <p class="text-base font-[archivo] text-[#7d8794] font-normal">27 May 2024</p>
+                                <div class="relative">
+                                    <img class="rounded-lg w-full h-[185px]"
+                                        src="./assets/aboutUs-image/aboutus-profile.jpg" alt="">
+
+                                    <h2
+                                        class="bg-[#F68A0A] px-2 py-1 inline absolute  w-[180px] transform -translate-x-2/4 left-2/4 top-[95%]   text-white text-sm font-[archivo] font-[500] text-center ">
+                                        Architecture Design
+                                    </h2>
                                 </div>
+
+                                <p class="font-[titillium] text-[20px] font-[600]   text-[#0E121D] pt-3 text-center">
+                                    We offer comprehensive construction solutions, ensuring quality
+                                </p>
+
+                                <div class="flex gap-10 items-center justify-center">
+                                    <p class="text-base font-[archivo] text-[#7d8794] font-normal">By Admin</p>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-regular fa-calendar text-[#7d8794] text-base"></i>
+                                        <p class="text-base font-[archivo] text-[#7d8794] font-normal">27 May 2024</p>
+                                    </div>
+                                </div>
+
                             </div>
-    
-                        </div>
-                    </a>
+                        </a>
                     </div>
 
                     <!-- blog 04 -->
-                    <div class="p-4 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-500 ">
+                    <div
+                        class="p-4 rounded-lg shadow-md overflow-hidden hover:scale-105 transition-transform duration-500 ">
                         <a href="#">
                             <div class=" space-y-3 md:space-y-4 relative">
 
                                 <div class="relative">
-                                    <img class="rounded-lg w-full h-[185px]" src="./assets/aboutUs-image/aboutus-profile.jpg"
-                                        alt="">
-        
+                                    <img class="rounded-lg w-full h-[185px]"
+                                        src="./assets/aboutUs-image/aboutus-profile.jpg" alt="">
+
                                     <!-- category name -->
                                     <h2
                                         class="bg-[#F68A0A] px-4 py-1 absolute  w-[180px] transform -translate-x-2/4 left-2/4 top-[95%]  text-white text-sm font-[archivo] font-[500] text-center">
                                         General Construction
                                     </h2>
                                 </div>
-        
+
                                 <p class="font-[titillium] text-[20px] font-[600]  text-[#0E121D] pt-3 text-center">
                                     We offer comprehensive construction solutions, ensuring quality
                                 </p>
-        
+
                                 <div class="flex gap-10 items-center justify-center">
                                     <p class="text-base font-[archivo] text-[#7d8794] font-normal">By Admin</p>
                                     <div class="flex gap-2 items-center">
@@ -1517,7 +1524,7 @@
                                         <p class="text-base font-[archivo] text-[#7d8794] font-normal">27 May 2024</p>
                                     </div>
                                 </div>
-        
+
                             </div>
                         </a>
                     </div>
@@ -1851,6 +1858,18 @@
         </div>
     </footer>
     <!-- Ends footer -->
+
+
+    <!-- javascript -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[14%]')
+        }
+    </script>
 
 </body>
 
