@@ -40,7 +40,7 @@
                     </div>
                     <div>
                         <i class="fa-solid fa-location-dot text-[#F68812] text-sm"></i>
-                        <span class="text-[#908C8D] ml-1 text-sm font-[archivo]"> 138 MacArthur Ave, United
+                        <span class="text-[#908C8D] ml-1 text-sm font-[archivo]">138 MacArthur Ave, United
                             States</span>
                     </div>
                     <div>
@@ -93,7 +93,8 @@
                     <!-- Ends logo -->
 
                     <!-- navlink -->
-                    <div  class="z-10 nav-links transition-all duration-700  lg:static absolute bg-white lg:bg-transparent lg:min-h-fit min-h-[50vh] left-0 top-[-100%] lg:w-auto  w-full flex items-center px-5">
+                    <div
+                        class="z-10 nav-links transition-all duration-700  lg:static absolute bg-white lg:bg-transparent lg:min-h-fit min-h-[50vh] left-0 top-[-100%] lg:w-auto  w-full flex items-center px-5">
                         <ul class="flex flex-col lg:flex-row lg:items-center gap-10">
                             <li
                                 class="text-sm font-[titillium] text-[#4C4D4E] hover:text-[#F68A0A] transform transition-all duration-200 font-[600]">
@@ -121,13 +122,14 @@
                 </div>
 
                 <!-- Start get a quote button -->
-                <div class="flex items-center gap-3" >
+                <div class="flex items-center gap-3">
                     <button
                         class="bg-[#F68A0A] hover:bg-[#ee8404] transform transition-all duration-300 text-white text-sm font-[archivo] font-[500] px-3 sm:px-7 py-2 sm:py-4 flex items-center gap-1">
                         GET A QUOTE
                         <i class="fa-solid fa-arrow-right-to-bracket hidden md:block"></i>
                     </button>
-                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer lg:hidden"></ion-icon>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl cursor-pointer lg:hidden"></ion-icon>
                 </div>
                 <!-- Ends get a quote button -->
                 <!-- #F68A0A -->
@@ -1860,16 +1862,18 @@
     <!-- Ends footer -->
 
 
-    <!-- javascript -->
+    <!-- Start javascript -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
     <script>
         const navLinks = document.querySelector('.nav-links')
         function onToggleMenu(e) {
             e.name = e.name === 'menu' ? 'close' : 'menu'
-            navLinks.classList.toggle('top-[14%]')
+            navLinks.classList.toggle('top-[16%]')          
+                  
         }
     </script>
+    <!-- Ends javascript -->
 
 </body>
 

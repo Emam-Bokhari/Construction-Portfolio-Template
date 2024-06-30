@@ -82,19 +82,20 @@
         <!-- Ends top navbar -->
 
         <!-- Start Navbar -->
-        <div class="bg-[#FFEBDE] w-full h-[100px]">
+        <div class="bg-[#FFEBDE] w-full ">
             <div class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-8 flex justify-between items-center ">
 
                 <div class="flex items-center gap-10">
                     <!-- Start logo -->
                     <div>
-                        <img class="w-[208px] h-[100px]" src="./assets/logo/logo.png" alt="">
+                        <img class="w-[120px] lg:w-[208px] h-[70px] lg:h-[100px]" src="./assets/logo/logo.png" alt="">
                     </div>
                     <!-- Ends logo -->
 
                     <!-- navlink -->
-                    <div>
-                        <ul class="flex items-center gap-10">
+                    <div
+                        class="z-10 nav-links transition-all duration-700  lg:static absolute bg-white lg:bg-transparent lg:min-h-fit min-h-[50vh] left-0 top-[-100%] lg:w-auto  w-full flex items-center px-5">
+                        <ul class="flex flex-col lg:flex-row lg:items-center gap-10">
                             <li
                                 class="text-sm font-[titillium] text-[#4C4D4E] hover:text-[#F68A0A] transform transition-all duration-200 font-[600]">
                                 <a href="./index.html">HOME</a>
@@ -121,12 +122,14 @@
                 </div>
 
                 <!-- Start get a quote button -->
-                <div>
+                <div class="flex items-center gap-3">
                     <button
-                        class="bg-[#F68A0A] hover:bg-[#ee8404] transform transition-all duration-300 text-white text-sm font-[archivo] font-[500] px-7 py-4 flex items-center gap-1">
+                        class="bg-[#F68A0A] hover:bg-[#ee8404] transform transition-all duration-300 text-white text-sm font-[archivo] font-[500] px-3 sm:px-7 py-2 sm:py-4 flex items-center gap-1">
                         GET A QUOTE
                         <i class="fa-solid fa-arrow-right-to-bracket hidden md:block"></i>
                     </button>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl cursor-pointer lg:hidden"></ion-icon>
                 </div>
                 <!-- Ends get a quote button -->
                 <!-- #F68A0A -->
@@ -146,7 +149,7 @@
 
         <div class="absolute top-1/2 -translate-y-1/2 left-[18%]">
             <h2 class="font-[titillium] text-[54px] font-[700] text-white">Service</h2>
-            <p class="font-[titillium] text-[18px] font-[600] text-[#F68A0A] ">Home | Service</p>
+            <p class="font-[titillium] text-[18px] font-[600] text-[#F68A0A] ">Home | Service Us</p>
         </div>
 
     </div>
@@ -190,11 +193,11 @@
                     <p class="font-[archivo] text-base text-[#4D5765]"> We offer comprehensive construction
                         solutions, ensuring quality, efficiency, and adherence to deadlines</p>
                     <!-- read more button -->
-                    <button
+                    <a href="./serviceDetails.html"
                         class="uppercase text-sm font-[archivo] font-[600] text-[#0E121D] hover:text-[#F68A0A] transform transition-all duration-200 flex items-center gap-2">
                         READ MORE
                         <i class="fa-solid fa-arrow-right text-sm"></i>
-                    </button>
+                    </a>
 
                 </div>
                 <!-- end card 01 -->
@@ -757,7 +760,18 @@
     </footer>
     <!-- Ends footer -->
 
+ <!-- Start javascript -->
+ <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
+ <script>
+     const navLinks = document.querySelector('.nav-links')
+     function onToggleMenu(e) {
+         e.name = e.name === 'menu' ? 'close' : 'menu'
+         navLinks.classList.toggle('top-[16%]')          
+               
+     }
+ </script>
+ <!-- Ends javascript -->
 
 </body>
 </html>
